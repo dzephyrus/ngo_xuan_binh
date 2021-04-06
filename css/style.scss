@@ -471,9 +471,15 @@ line-height: 160%;
 .seemore-button, {
 	border-radius: 30px;
 	padding: 11px 95px 11px 60px;
+	border: 1px solid #9D5E41;
+	background-color: #ffffff00;
+	color: #9D5E41;
+	
 	.icon-right {
 		position: absolute;
-		top: 20%;
+		top: 0%;
+    right: -34px;
+    width: 25px;
 		transition: all 200ms ease-in-out;
 		-webkit-transition: all 200ms ease-in-out; /** Chrome & Safari **/
 		-moz-transition: all 200ms ease-in-out; /** Firefox **/
@@ -487,7 +493,7 @@ line-height: 160%;
 			-o-transform: translate(10px,0); /** Opera **/
 			-moz-transform: translate(10px,0); /** Firefox **/
 		}
-		color: #A46A14;
+		color: #9D5E41;
 	}
 }
 .seemore-button.bg-red{
@@ -496,11 +502,6 @@ line-height: 160%;
 	border: none;
 	color: white;
 	
-	.icon-right {
-		    top: 0%;
-    right: -34px;
-    width: 25px;
-	}
 	&:hover{
 			color: white;
 		.icon-right{
@@ -700,6 +701,66 @@ line-height: 100%;
 			}
 		}
 	}
+}
+.custom-carousel{
+	background: #E9D6CE;
+	.carousel-control-section{
+        position: relative;
+        width: 100%;
+        top: 100%;
+		.carousel-indicators {
+			right: auto;
+			bottom: auto;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 0;
+			li {
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				background-color: #DDBEB0;
+				opacity: 1;
+				margin: 0 4px;
+				border: none;
+			}
+			.active {
+				background-color: #FFFFFF;
+			}
+		}
+        .carousel-control-prev,
+        .carousel-control-next {
+            z-index: 2;
+			position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            color: #FFFFFF;
+			background: #CA9983;
+			&:focus, &:hover{
+				text-decoration: none;
+				outline: 0;
+				opacity: .9;
+				background: #9D5E41;
+			}
+        }
+        .carousel-control-prev{
+			left: -7px;
+			&-icon{
+				background-image: url("../images/icon/prev.svg");
+			}
+        }
+        .carousel-control-next{
+			&-icon{
+				background-image: url("../images/icon/next.svg");	
+			}
+        }
+    }
 }
 
 footer{
