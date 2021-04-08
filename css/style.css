@@ -589,7 +589,10 @@ input[type="search"].sb-search-input {
   line-height: 100%;
   color: #D4CDC7; }
 
+.intro-section .intro-section-bg {
+  position: relative; }
 .intro-section .intro-section-detail {
+  position: absolute;
   z-index: 2;
   margin-left: auto;
   margin-right: auto;
@@ -614,6 +617,12 @@ input[type="search"].sb-search-input {
     position: relative;
     width: 100%;
     top: 100%; }
+    .custom-carousel .carousel-control-section .count-slide {
+      position: absolute;
+      left: 0; }
+    .custom-carousel .carousel-control-section .button-slide {
+      position: absolute;
+      right: 0; }
     .custom-carousel .carousel-control-section .carousel-indicators {
       right: auto;
       bottom: auto;

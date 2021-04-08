@@ -677,7 +677,11 @@ line-height: 100%;
 	color: #D4CDC7;
 }
 .intro-section{
+	.intro-section-bg{
+		position: relative;
+	}
 	.intro-section-detail{
+		position: absolute;
 		z-index: 2; 
 		margin-left: auto;
 		margin-right: auto;
@@ -711,6 +715,14 @@ line-height: 100%;
         position: relative;
         width: 100%;
         top: 100%;
+		.count-slide{
+			position: absolute;
+			left: 0
+		}
+		.button-slide{
+			position: absolute;
+			right: 0
+		}
 		.carousel-indicators {
 			right: auto;
 			bottom: auto;

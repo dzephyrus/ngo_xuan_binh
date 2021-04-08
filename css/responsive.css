@@ -380,8 +380,44 @@
   .top-main-carousel .slick-prev-custom {
     right: 18%; }
 
-  .custom-carousel, .custom-carousel2 {
-    background: #e9d6ce00; } }
+  .custom-carousel, .carousel-type2 {
+    background: #e9d6ce00; }
+
+  .news-section .news-section-mini {
+    padding-top: 20px; }
+    .news-section .news-section-mini .news-section-mini-item {
+      margin-bottom: 12px;
+      padding-bottom: 16px; }
+      .news-section .news-section-mini .news-section-mini-item:first-child {
+        margin-bottom: 12px; }
+      .news-section .news-section-mini .news-section-mini-item .content-section {
+        width: 100%; }
+        .news-section .news-section-mini .news-section-mini-item .content-section .fix-text {
+          -webkit-line-clamp: 2; }
+
+  .section-title {
+    padding: 29px 0 20px; }
+
+  .intro-section .intro-section-bg {
+    position: absolute;
+    height: 100%;
+    z-index: 3; }
+  .intro-section .intro-section-detail {
+    position: relative;
+    z-index: 4;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 30px;
+    padding: 40px 0; }
+    .intro-section .intro-section-detail.bg-base {
+      background-color: #ebe3dd00; }
+    .intro-section .intro-section-detail .author {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 100%; } }
 @media (max-width: 991px) {
   .w-lg-25 {
     width: 25% !important; }
@@ -868,15 +904,15 @@
           font-size: 16px;
           line-height: 130%; }
 
-  .custom-carousel2 .news-section .news-section-mini {
+  .carousel-type2 .news-section .news-section-mini {
     padding-top: 0; }
-    .custom-carousel2 .news-section .news-section-mini .news-section-mini-item:first-child {
+    .carousel-type2 .news-section .news-section-mini .news-section-mini-item:first-child {
       margin-bottom: 20px;
       border-bottom: none;
       padding-bottom: 0; }
-      .custom-carousel2 .news-section .news-section-mini .news-section-mini-item:first-child .bg-white {
+      .carousel-type2 .news-section .news-section-mini .news-section-mini-item:first-child .bg-white {
         background: #ffffff !important; }
-      .custom-carousel2 .news-section .news-section-mini .news-section-mini-item:first-child .content-section .title-20 {
+      .carousel-type2 .news-section .news-section-mini .news-section-mini-item:first-child .content-section .title-20 {
         font-family: Lato;
         font-style: normal;
         font-weight: bold;
