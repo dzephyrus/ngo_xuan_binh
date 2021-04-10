@@ -509,6 +509,61 @@
 			}
 		}
 	}
+	.media-slide{
+		position: relative;
+		background-color: black;
+		.slick-prev-custom, .slick-next-custom{
+			position: absolute;
+			z-index: 4;
+			width: 30px;
+			height: 80px;
+			background: white;
+			border: 0.5px solid rgba(255, 255, 255, 0.2);
+			top: 25%;
+			&:focus{
+				outline:none;
+			}
+		}
+		.slick-prev-custom{
+			&::after{
+				content: '';
+				position: absolute;
+				background-image: url("../images/icon/media-left.svg");
+                left: 0px;
+                right: 0px;
+                bottom: 0;
+                top: 0;
+                width: 13px;
+                height: 100%;
+                margin: 0px auto;
+                background-size: 100% 100%;
+			}
+			left: 16px;
+		}
+		.slick-next-custom{
+			&::after{
+				content: '';
+				position: absolute;
+				background-image: url("../images/icon/media-right.svg");
+                left: 0px;
+                right: 0px;
+                bottom: 0;
+                top: 0;
+                width: 13px;
+                height: 100%;
+                margin: 0px auto;
+                background-size: 100% 100%;
+			}
+			right: 0;
+		}
+		.media-slide-item-content{
+			color: white;
+			background-color: #333333;
+			.text-orange{
+				color: #AA7D54
+			}
+		}
+	}
 }
 @media (max-width: 991px) {
 
@@ -1091,4 +1146,5 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 			}	
 		}
 	}
+	
 }

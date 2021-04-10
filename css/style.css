@@ -8,9 +8,6 @@ img {
 
 /* Scss Document */
 @font-face {
-  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-  font-family: 'Playfair Display', serif; }
-@font-face {
   src: url("../font/Lato-Regular_2.ttf");
   font-family: 'Lato'; }
 .font-playfair {
@@ -278,12 +275,12 @@ p {
   font-size: 20px;
   line-height: 160%; }
 
-.sub-title-18 {
-  font-family: SVN-Gilroy;
+.title-18 {
+  font-family: Lato;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 18px;
-  line-height: 28px; }
+  line-height: 130%; }
 
 .title-16 {
   font-family: Arial;
@@ -292,7 +289,7 @@ p {
   font-size: 16px;
   line-height: 160%; }
 
-.sub-title-14, .nav_desktop .nav_item a {
+.sub-title-14 {
   font-family: SVN-Gilroy;
   font-style: normal;
   font-weight: 600;
@@ -323,55 +320,45 @@ p {
 
 .header-pc {
   z-index: 3;
-  background: #ffffff00; }
-  .header-pc .white-menu {
-    display: block; }
-  .header-pc .black-menu {
-    display: none; }
+  background: #EBE3DD;
+  color: #191919;
+  border-bottom: 2px solid #333333; }
 
-.header-pc.active {
-  background: white;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); }
-  .header-pc.active a {
-    color: black !important;
-    text-shadow: none !important; }
-  .header-pc.active .text-white {
-    color: black !important; }
-  .header-pc.active .white-menu {
-    display: none; }
-  .header-pc.active .black-menu {
-    display: block; }
-
-.nav_desktop {
-  background-color: #a00106; }
-  .nav_desktop .nav_item {
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 0 13px 3px; }
-    .nav_desktop .nav_item a {
-      color: #FFFFFF;
-      text-shadow: 0px 2px 4px #000000e0; }
-    .nav_desktop .nav_item .dropdown-menu .dropdown-item {
-      transition: all .15s ease-in-out;
-      padding-left: 12px;
-      padding-right: 30px;
-      color: #828282;
-      font-weight: bold;
-      text-shadow: none; }
-  .nav_desktop .nav_item:hover a {
-    color: #ffb74c; }
-  .nav_desktop .nav_item:hover .dropdown-menu .dropdown-item:hover {
-    color: #9D5E41;
-    background-color: #fff;
-    padding-left: 17px;
-    padding-right: 25px; }
-  .nav_desktop .nav_item.active {
-    border-bottom: 2px solid #A46A14; }
-    .nav_desktop .nav_item.active a {
-      color: #FFFFFF; }
+.nav_desktop .author-name {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 160%;
+  /* identical to box height, or 58px */ }
+  .nav_desktop .author-name a {
+    color: #B12723 !important; }
+.nav_desktop .nav_item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 24px; }
+  .nav_desktop .nav_item a {
+    color: #191919;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px; }
+  .nav_desktop .nav_item .dropdown-menu .dropdown-item {
+    transition: all .15s ease-in-out;
+    padding-left: 12px;
+    padding-right: 30px;
+    color: #828282;
+    font-weight: bold;
+    text-shadow: none; }
+.nav_desktop .nav_item:hover a {
+  color: #ffb74c; }
+.nav_desktop .nav_item:hover .dropdown-menu .dropdown-item:hover {
+  color: #9D5E41;
+  background-color: #fff;
+  padding-left: 17px;
+  padding-right: 25px; }
 
 @media all and (min-width: 992px) {
   .nav_desktop .nav_item .dropdown-menu {
@@ -668,8 +655,76 @@ input[type="search"].sb-search-input {
     .custom-carousel .carousel-control-section .carousel-control-next-icon {
       background-image: url("../images/icon/next.svg"); }
 
+.media {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+  .media .text-orange {
+    color: #9D5E41; }
+  .media .media-article {
+    width: 1238px;
+    height: 820px;
+    padding: 80px 32px;
+    background: black; }
+  .media .media-sidebar {
+    width: 553px;
+    height: 820px;
+    background-color: #333333;
+    padding: 60px 48px;
+    color: white; }
+    .media .media-sidebar .media-sidebar-content {
+      height: 452px;
+      border-bottom: 2px solid #9D5E41; }
+      .media .media-sidebar .media-sidebar-content .title-40 {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 130%; }
+    .media .media-sidebar .media-sidebar-video {
+      display: flex;
+      justify-content: space-between; }
+      .media .media-sidebar .media-sidebar-video .sidebar-video-item {
+        width: 200px; }
+        .media .media-sidebar .media-sidebar-video .sidebar-video-item .play-button {
+          position: absolute;
+          left: 0;
+          bottom: 0; }
+          .media .media-sidebar .media-sidebar-video .sidebar-video-item .play-button .play-icon {
+            width: 28px;
+            height: 28px;
+            color: #CEB796;
+            background: #191919; }
+          .media .media-sidebar .media-sidebar-video .sidebar-video-item .play-button .play-time {
+            background: black;
+            height: 28px;
+            font-size: 14px; }
+
+.play-button .play-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9D5E41;
+  background: #15120D; }
+.play-button .play-time {
+  background: #c4c4c438;
+  height: 36px;
+  padding: 0 10px;
+  color: #999999;
+  display: flex;
+  align-items: center;
+  border: 1px solid #000000;
+  border-left: none; }
+
+.achievement .achievement-img {
+  width: 65%; }
+.achievement .achievement-content {
+  width: 35%; }
+
 footer {
-  padding: 60px 0 80px;
+  padding: 38px 0;
   position: relative;
   overflow: hidden; }
   footer::before {
@@ -692,20 +747,6 @@ footer {
     background-repeat: no-repeat;
     background-image: url(../images/icon/XMLID2.svg);
     background-size: 100% 124%; }
-
-.footer-cate {
-  width: 610px;
-  padding: 36px 0 12px; }
-  .footer-cate .footer-cate-item {
-    padding: 0 14px 19px 14px;
-    display: block; }
-  .footer-cate a {
-    font-family: SVN-Gilroy;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em; }
 
 .cd-auto-hide-header {
   position: sticky;
