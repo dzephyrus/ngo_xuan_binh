@@ -847,6 +847,12 @@ line-height: 100%;
 		width: 35%;
 	}
 }
+.dropdown-item.active, .dropdown-item:active{
+	background-color:#ebe3dd!important;
+}
+.dropdown-item:hover{
+	background-color: #ebe3dd!important;
+}
 
 footer{
 	padding: 38px 0;

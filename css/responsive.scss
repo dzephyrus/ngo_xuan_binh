@@ -564,6 +564,14 @@
 			}
 		}
 	}
+	.achievement{
+		.achievement-content{
+			width: 100%
+		}
+	}
+	.active-mobile {
+		color: black;
+	}
 }
 @media (max-width: 991px) {
 
@@ -968,7 +976,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 	.cd-auto-hide-header {
   position: sticky;
-  z-index: 4;
+  z-index: 5;
   top: 0;
   left: 0;
   width: 100%;
@@ -1144,6 +1152,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 					}
 				}
 			}	
+		}
+	}
+	.intro-section{
+		.intro-section-detail{
+			padding: 0 0 30px;
 		}
 	}
 	
