@@ -1159,5 +1159,17 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 			padding: 0 0 30px;
 		}
 	}
-	
+	.new-journey{
+		.aside-news{
+			.aside-news-item{
+				padding-top: 30px;
+				&:first-child{
+					padding-top: 30px;
+				}
+				.content-section-detail{
+					padding: 10px 12px;
+				}
+			}
+		}
+	}
 }

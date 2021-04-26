@@ -974,6 +974,13 @@
         padding: 10px 12px; }
 
   .intro-section .intro-section-detail {
-    padding: 0 0 30px; } }
+    padding: 0 0 30px; }
+
+  .new-journey .aside-news .aside-news-item {
+    padding-top: 30px; }
+    .new-journey .aside-news .aside-news-item:first-child {
+      padding-top: 30px; }
+    .new-journey .aside-news .aside-news-item .content-section-detail {
+      padding: 10px 12px; } }
 
 /*# sourceMappingURL=responsive.css.map */
