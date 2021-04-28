@@ -680,6 +680,16 @@ line-height: 100%;
 	@extend .title-48;
 	color: $red;
 	text-align: center;
+	position: relative;
+	.decor-shape{
+		position: absolute;
+		width: 400px;
+		top: -79px;
+		margin: auto;
+		left: 0;
+		right: 0;
+		opacity: 0.6;
+	}
 }
 .news-section{
 	.news-section-mini{
@@ -694,7 +704,7 @@ line-height: 100%;
 	}
 }
 .news-section-3{
-	.news-section-mini-item{
+	.news-section-item{
 		padding-top: 30px;
 	}
 }
@@ -834,6 +844,13 @@ line-height: 100%;
 		
 	}
 }
+.media.media-detail{
+	margin-bottom: 60px;
+	.media-article{
+		padding: 60px 32px;
+	}
+}
+
 
 .play-button{
     
