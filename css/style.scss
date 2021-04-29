@@ -790,20 +790,22 @@ line-height: 100%;
 }
 .media{
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: stretch;
 	.text-orange{
 		color: #9D5E41;
 	}
 	.media-article{
 		width: 1238px;
-		height: 820px;
+//		height: 820px;
 		padding: 80px 32px;
 		background: black;
 	}
 	.media-sidebar{
 		width: 553px;
-		height: 820px;
+//		height: 820px;
 		background-color: #333333;
 		padding: 60px 48px;
 		color: white;
@@ -816,11 +818,12 @@ line-height: 100%;
 				line-height: 130%;
 			}
 			height: 452px;
-			border-bottom: 2px solid #9D5E41;
 		}
 		.media-sidebar-video{
+			padding-top: 42px;
 			display: flex;
 			justify-content: space-between;
+			border-top: 2px solid #9D5E41;
 			.sidebar-video-item{
 				width: 200px;
 				.play-button{
@@ -841,16 +844,105 @@ line-height: 100%;
 				}
 			}
 		}
-		
 	}
 }
 .media.media-detail{
+	background: black;
 	margin-bottom: 60px;
+	align-items: stretch;
 	.media-article{
-		padding: 60px 32px;
+		padding: 58px 32px;
+		height: auto;
+	}
+	.media-sidebar{
+		background: black;
+		height: auto
 	}
 }
+.news-detail{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	.main-section{
+		width: calc(100% - 352px);
+	}
+	.sidebar-section{
+		width: 300px;
+		.sidebar-item{
+			.sidebar-item-content{
+				padding: 12px 0;
+				border-bottom: 1px solid #00000036;
+				margin-bottom: 10px;
+				.title-cate{
+					padding-top: 12px;
+					font-family: Arial;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 13px;
+					line-height: 15px;
+					color: #666666;
+				}
+			}
+		}
+	}
+}
+.img-desc{
+	background: #FFFFFF;
+	padding: 9px 15px 20px;
+	p{
+		font-family: Lato;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+.floating-bar{
+	background-color: #fff;
+    position: sticky;
+    width: 48px;
+    border: 1px solid #EEF4ED;
+    top: 153px;
+	.floating-bar-item{
+		padding: 13px 0;
+		text-align: center;
+		display: block;
+		img{
+			max-width: 20px;
+			margin: auto;
+		}
+		span{
+			font-family: Arial;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 160%;
+			/* or 19px */
 
+			text-align: center;
+			color: #151EBB;
+		}
+		.fa-facebook-f{
+			color: #3B5999
+		}
+		.fa-twitter{
+			color: #55ACEE
+		}
+		.fa-link{
+			color: #18136F
+		}
+		.fa-bookmark, .fa-bug{
+			color: #151EBB
+		}
+		&:first-child{
+			padding: 6px 0 3px;
+		}
+		&:hover{
+			background: #EEF4ED
+		}
+	}
+}
 
 .play-button{
     
