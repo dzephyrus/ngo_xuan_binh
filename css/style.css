@@ -755,8 +755,8 @@ input[type="search"].sb-search-input {
         color: #666666; }
 
 .img-desc {
-  background: #FFFFFF;
-  padding: 9px 15px 20px; }
+  background: white;
+  padding: 10px 15px 13px; }
   .img-desc p {
     font-family: Lato;
     font-style: normal;
@@ -765,10 +765,10 @@ input[type="search"].sb-search-input {
     line-height: 24px; }
 
 .floating-bar {
-  background-color: #fff;
+  background-color: #E9D6CE;
   position: sticky;
   width: 48px;
-  border: 1px solid #EEF4ED;
+  border: 1px solid #9D5E41;
   top: 153px; }
   .floating-bar .floating-bar-item {
     padding: 13px 0;
@@ -785,15 +785,15 @@ input[type="search"].sb-search-input {
       line-height: 160%;
       /* or 19px */
       text-align: center;
-      color: #151EBB; }
+      color: #9D5E41; }
     .floating-bar .floating-bar-item .fa-facebook-f {
       color: #3B5999; }
     .floating-bar .floating-bar-item .fa-twitter {
       color: #55ACEE; }
-    .floating-bar .floating-bar-item .fa-link {
-      color: #18136F; }
-    .floating-bar .floating-bar-item .fa-bookmark, .floating-bar .floating-bar-item .fa-bug {
-      color: #151EBB; }
+    .floating-bar .floating-bar-item .fa-bookmark {
+      color: #b28874; }
+    .floating-bar .floating-bar-item .fa-link, .floating-bar .floating-bar-item .fa-bug {
+      color: #0000007d; }
     .floating-bar .floating-bar-item:first-child {
       padding: 6px 0 3px; }
     .floating-bar .floating-bar-item:hover {
