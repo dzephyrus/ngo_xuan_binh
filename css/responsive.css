@@ -163,149 +163,6 @@
     grid-template-columns: repeat(12, 55px);
     grid-template-rows: repeat(18, 55px); }
 
-  .modal-custom .modal-dialog {
-    width: 80%;
-    padding: 26px 0; }
-    .modal-custom .modal-dialog .modal-content {
-      border: none;
-      background-color: rgba(0, 0, 0, 0); }
-      .modal-custom .modal-dialog .modal-content button {
-        width: 40px;
-        height: 40px;
-        border-radius: 50px;
-        background: #7A3E0C;
-        top: -19px;
-        right: -21px;
-        opacity: 1; }
-        .modal-custom .modal-dialog .modal-content button span {
-          font-size: 25px;
-          color: white; }
-      .modal-custom .modal-dialog .modal-content .modal-image-title {
-        color: white;
-        background-color: #00000066; }
-
-  .new-detail-description-text {
-    border-left: none; }
-    .new-detail-description-text .count-image {
-      position: relative; }
-
-  .abbot-section {
-    height: 270px; }
-    .abbot-section .abbot-section-avatar {
-      right: 0px;
-      z-index: 1; }
-    .abbot-section .abbot-section-des {
-      padding-left: 15px;
-      z-index: 2; }
-
-  .h1-lg-mon {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 41px; }
-
-  .h2-lg-mon {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px; }
-
-  .h3-lg-mon {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 25px; }
-
-  .h4-lg-mon {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 18px; }
-
-  .top-news {
-    height: 266px; }
-
-  .slick-image-lib .slick-controls {
-    top: 252px; }
-    .slick-image-lib .slick-controls .previous, .slick-image-lib .slick-controls .next {
-      width: 48px;
-      height: 48px;
-      border-radius: 3px;
-      outline: none;
-      background: #e5b764ba;
-      border-radius: 3px; }
-      .slick-image-lib .slick-controls .previous i, .slick-image-lib .slick-controls .next i {
-        font-size: 22px; }
-    .slick-image-lib .slick-controls .previous {
-      left: 7px; }
-    .slick-image-lib .slick-controls .next {
-      right: 7px; }
-
-  .img-lib-sidebar {
-    right: 0; }
-
-  .gallery-wrapper {
-    overflow: hidden; }
-    .gallery-wrapper .gallery-wrapper-item .gallery-wrapper-item-tag-left {
-      display: none; }
-    .gallery-wrapper .gallery-wrapper-item .gallery-wrapper-item-tag-right {
-      display: none; }
-
-  .bg-lead {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    top: 10%;
-    left: -26%;
-    background-image: url(../images/icon/XMLID2.svg);
-    background-repeat: no-repeat;
-    background-size: contain; }
-
-  .lightgray-section {
-    height: auto;
-    padding: 80px 0; }
-
-  .slide-main {
-    height: auto; }
-    .slide-main .carousel-indicators {
-      left: 30px;
-      top: 110%; }
-    .slide-main .slide .carousel-control-section {
-      position: absolute;
-      height: 100%;
-      width: 15%;
-      right: 0px;
-      top: 0; }
-      .slide-main .slide .carousel-control-section .carousel-control-prev,
-      .slide-main .slide .carousel-control-section .carousel-control-next {
-        z-index: 2;
-        position: absolute;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        background: rgba(255, 255, 255, 0.3);
-        border: 0.5px solid rgba(255, 255, 255, 0.2);
-        border-radius: 50%;
-        color: #FFFFFF;
-        opacity: .9; }
-      .slide-main .slide .carousel-control-section .carousel-control-prev {
-        top: 48.5%;
-        left: 50%; }
-      .slide-main .slide .carousel-control-section .carousel-control-next {
-        top: 59%;
-        right: unset;
-        left: 50%; }
-
   .posts-icon-fixed {
     position: fixed;
     top: 50%;
@@ -574,7 +431,11 @@
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
-        line-height: 21px; } }
+        line-height: 21px; }
+
+  .main-news .main-news-title.title-40 {
+    font-size: 28px;
+    line-height: 140%; } }
 @media (max-width: 991px) {
   .w-lg-25 {
     width: 25% !important; }
